@@ -15,3 +15,6 @@ def contact(request):
 def services(request):
   return render(request, "services.html")
   
+
+# http://127.0.0.1:8000/services/
+# http://127.0.0.1:8000/services/about

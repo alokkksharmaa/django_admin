@@ -10,5 +10,12 @@
 <body>
   <h1> This is index Page!</h1>
   <p> Join Now</p>
+  <nav>
+    <a href="{% url 'index' %}">Index</a>
+    <a href="{% url 'contact' %}">Contact</a>
+    <a href="{% url 'services' %}">Services</a>
+    <a href="{% url 'about' %}">About</a>
+  </nav>
 </body>
+
 </html>
