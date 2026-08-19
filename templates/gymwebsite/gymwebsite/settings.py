@@ -55,7 +55,7 @@ ROOT_URLCONF = 'gymwebsite.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ["C:/Users/aloks/djangoProject/templates/gymwebsite/templates"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
