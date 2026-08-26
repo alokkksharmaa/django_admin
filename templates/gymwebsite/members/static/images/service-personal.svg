@@ -1,0 +1,8 @@
+<svg width="640" height="420" viewBox="0 0 640 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Personal coaching icon">
+  <rect width="640" height="420" rx="18" fill="#fff0d8"/>
+  <circle cx="240" cy="145" r="38" fill="#243341"/>
+  <rect x="200" y="185" width="82" height="120" rx="36" fill="#243341"/>
+  <circle cx="400" cy="155" r="34" fill="#e85d04"/>
+  <rect x="365" y="191" width="72" height="108" rx="32" fill="#e85d04"/>
+  <rect x="270" y="215" width="85" height="16" rx="8" fill="#243341"/>
+</svg>

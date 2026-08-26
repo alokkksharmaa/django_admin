@@ -1,0 +1,10 @@
+<svg width="860" height="540" viewBox="0 0 860 540" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Team of trainers">
+  <rect width="860" height="540" rx="24" fill="#fff0d8"/>
+  <rect x="60" y="390" width="740" height="28" rx="12" fill="#d78a4a"/>
+  <circle cx="220" cy="150" r="46" fill="#243341"/>
+  <rect x="165" y="200" width="110" height="170" rx="52" fill="#243341"/>
+  <circle cx="430" cy="140" r="42" fill="#e85d04"/>
+  <rect x="382" y="184" width="96" height="186" rx="48" fill="#e85d04"/>
+  <circle cx="630" cy="160" r="44" fill="#243341"/>
+  <rect x="580" y="205" width="102" height="165" rx="50" fill="#243341"/>
+</svg>

@@ -1,21 +1,49 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends 'base.html' %}
+{% load static %}
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About</title>
-</head>
+{% block title %}IronPulse Gym | About{% endblock %}
 
-<body>
-  <h1>Welcome to contact Page</h1>
-  <p> Hello!</p>
-  <nav>
-      <a href="{% url 'index' %}">Index</a>
-      <a href="{% url 'contact' %}">Contact</a>
-      <a href="{% url 'services' %}">Services</a>
-      <a href="{% url 'about' %}">About</a>
-  </nav>
-</body>
+{% block content %}
+<section class="page-head container">
+  <p class="eyebrow">About IronPulse</p>
+  <h1>More Than a Gym, We Are a Training Community</h1>
+</section>
 
-</html>
+<section class="two-col container">
+  <div>
+    <p>
+      Founded in 2018, IronPulse Gym was built to help people become stronger in both body and mindset.
+      Our coaching-first model makes fitness simple, measurable, and sustainable.
+    </p>
+    <p>
+      Whether your goal is weight loss, muscle gain, performance, or general health,
+      our team builds clear plans and supports you at every step.
+    </p>
+    <ul class="check-list">
+      <li>Beginner-friendly onboarding</li>
+      <li>Customized training roadmap</li>
+      <li>Monthly progress assessments</li>
+      <li>Nutrition guidance and accountability</li>
+    </ul>
+  </div>
+  <div class="image-panel">
+    <img src="https://images.unsplash.com/photo-1549476464-37392f717541?auto=format&fit=crop&w=1400&q=80"
+      alt="Gym trainers coaching members">
+  </div>
+</section>
+
+<section class="feature-grid container">
+  <article class="card">
+    <h3>Our Mission</h3>
+    <p>Help every member feel confident, capable, and consistent in their fitness journey.</p>
+  </article>
+  <article class="card">
+    <h3>Our Vision</h3>
+    <p>Create the most trusted local gym where results and wellbeing grow together.</p>
+  </article>
+  <article class="card">
+    <h3>Our Values</h3>
+    <p>Discipline, respect, progress, and community-driven support in every session.</p>
+  </article>
+</section>
+{% endblock %}

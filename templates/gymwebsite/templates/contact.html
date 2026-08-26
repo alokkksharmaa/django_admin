@@ -1,22 +1,47 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends 'base.html' %}
+{% load static %}
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact</title>
-</head>
+{% block title %}IronPulse Gym | Contact{% endblock %}
 
-<body>
-  <h1>Welcome to contact page</h1>
-  <p> Hello!</p>
+{% block content %}
+<section class="page-head container">
+  <p class="eyebrow">Get In Touch</p>
+  <h1>Start Your Fitness Journey Today</h1>
+</section>
 
-  <nav>
-    <a href="{% url 'index' %}">Index</a>
-    <a href="{% url 'contact' %}">Contact</a>
-    <a href="{% url 'services' %}">Services</a>
-    <a href="{% url 'about' %}">About</a>
-  </nav>
-</body>
+<section class="two-col container contact-layout">
+  <div>
+    <h2>Visit IronPulse</h2>
+    <p>21 Titan Avenue, Sector 5, New Delhi, India</p>
+    <p><strong>Phone:</strong> +91 98765 43210</p>
+    <p><strong>Email:</strong> hello@ironpulsegym.com</p>
+    <p><strong>Hours:</strong> Monday to Sunday, 6:00 AM to 11:00 PM</p>
+    <div class="image-panel">
+      <img src="https://images.unsplash.com/photo-1576678927484-cc907957088c?auto=format&fit=crop&w=1400&q=80"
+        alt="Modern gym interior and training area">
+    </div>
+  </div>
 
-</html>
+  <form class="contact-form" action="#" method="post">
+    {% csrf_token %}
+    <label for="name">Full Name</label>
+    <input id="name" name="name" type="text" placeholder="Enter your name">
+
+    <label for="email">Email</label>
+    <input id="email" name="email" type="email" placeholder="Enter your email">
+
+    <label for="goal">Fitness Goal</label>
+    <select id="goal" name="goal">
+      <option>Weight Loss</option>
+      <option>Muscle Gain</option>
+      <option>General Fitness</option>
+      <option>Athletic Performance</option>
+    </select>
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="4" placeholder="Tell us what you need"></textarea>
+
+    <button type="submit" class="btn btn-primary">Send Inquiry</button>
+  </form>
+</section>
+{% endblock %}

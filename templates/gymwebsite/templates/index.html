@@ -1,21 +1,59 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends 'base.html' %}
+{% load static %}
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Index Page</title>
-</head>
+{% block title %}IronPulse Gym | Home{% endblock %}
 
-<body>
-  <h1> This is index Page!</h1>
-  <p> Join Now</p>
-  <nav>
-    <a href="{% url 'index' %}">Index</a>
-    <a href="{% url 'contact' %}">Contact</a>
-    <a href="{% url 'services' %}">Services</a>
-    <a href="{% url 'about' %}">About</a>
-  </nav>
-</body>
+{% block content %}
+<section class="hero container">
+  <div class="hero-text">
+    <p class="eyebrow">Your New Starting Point</p>
+    <h1>Train Hard. Recover Smart. Stay Unstoppable.</h1>
+    <p>
+      IronPulse is a results-driven gym for beginners and athletes. Get expert coaching,
+      personalized programs, and an uplifting training environment.
+    </p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="{% url 'contact' %}">Book Free Trial</a>
+      <a class="btn btn-secondary" href="{% url 'services' %}">View Programs</a>
+    </div>
+  </div>
+  <div class="hero-image">
+    <img src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?auto=format&fit=crop&w=1400&q=80"
+      alt="Athlete lifting weights in gym">
+  </div>
+</section>
 
-</html>
+<section class="stats container">
+  <article>
+    <h3>120+</h3>
+    <p>Active Members</p>
+  </article>
+  <article>
+    <h3>35</h3>
+    <p>Certified Trainers</p>
+  </article>
+  <article>
+    <h3>7 Days</h3>
+    <p>Open Every Week</p>
+  </article>
+  <article>
+    <h3>6 AM - 11 PM</h3>
+    <p>Operating Hours</p>
+  </article>
+</section>
+
+<section class="feature-grid container">
+  <article class="card">
+    <h3>Strength Zone</h3>
+    <p>Free weights, squat racks, and progressive overload plans for real power gains.</p>
+  </article>
+  <article class="card">
+    <h3>Cardio Hub</h3>
+    <p>Treadmills, bikes, rowers, and coach-led endurance sessions for every level.</p>
+  </article>
+  <article class="card">
+    <h3>Recovery Lounge</h3>
+    <p>Mobility stations, stretching guidance, and post-workout recovery essentials.</p>
+  </article>
+</section>
+{% endblock %}

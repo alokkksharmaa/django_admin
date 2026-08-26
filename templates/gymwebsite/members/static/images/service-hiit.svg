@@ -1,0 +1,6 @@
+<svg width="640" height="420" viewBox="0 0 640 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="HIIT training icon">
+  <rect width="640" height="420" rx="18" fill="#fff0d8"/>
+  <polygon points="320,80 390,210 335,210 400,340 250,210 307,210" fill="#e85d04"/>
+  <circle cx="140" cy="320" r="30" fill="#243341" opacity="0.8"/>
+  <circle cx="510" cy="105" r="30" fill="#243341" opacity="0.8"/>
+</svg>

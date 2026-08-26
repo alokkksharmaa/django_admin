@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}IronPulse Gym{% endblock %}</title>
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="{% url 'index' %}">IronPulse</a>
+      <nav class="nav-links">
+        <a href="{% url 'index' %}">Home</a>
+        <a href="{% url 'services' %}">Programs</a>
+        <a href="{% url 'about' %}">About</a>
+        <a href="{% url 'contact' %}">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>Build strength. Build discipline. Build your future.</p>
+      <p>&copy; 2026 IronPulse Gym</p>
+    </div>
+  </footer>
+</body>
+
+</html>

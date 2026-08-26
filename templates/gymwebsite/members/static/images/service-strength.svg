@@ -1,0 +1,8 @@
+<svg width="640" height="420" viewBox="0 0 640 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Strength training icon">
+  <rect width="640" height="420" rx="18" fill="#fff0d8"/>
+  <rect x="120" y="192" width="400" height="34" rx="16" fill="#16212b"/>
+  <circle cx="120" cy="209" r="55" fill="#e85d04"/>
+  <circle cx="520" cy="209" r="55" fill="#e85d04"/>
+  <circle cx="120" cy="209" r="26" fill="#fff0d8"/>
+  <circle cx="520" cy="209" r="26" fill="#fff0d8"/>
+</svg>

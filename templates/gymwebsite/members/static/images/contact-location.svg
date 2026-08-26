@@ -1,0 +1,8 @@
+<svg width="860" height="520" viewBox="0 0 860 520" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Location marker and gym building">
+  <rect width="860" height="520" rx="24" fill="#fff0d8"/>
+  <rect x="240" y="200" width="380" height="210" rx="12" fill="#243341"/>
+  <rect x="300" y="250" width="70" height="160" fill="#fff0d8"/>
+  <rect x="410" y="250" width="70" height="160" fill="#fff0d8"/>
+  <rect x="520" y="250" width="70" height="160" fill="#fff0d8"/>
+  <path d="M430 70c-52 0-94 42-94 94 0 73 94 172 94 172s94-99 94-172c0-52-42-94-94-94zm0 132a38 38 0 1 1 0-76 38 38 0 0 1 0 76z" fill="#e85d04"/>
+</svg>
