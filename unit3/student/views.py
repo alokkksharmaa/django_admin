@@ -8,15 +8,27 @@ def index(request):
   # city = 'Bangalore'
   # courses = ['Python', 'Django', 'Flask', 'JavaScript', 'React']
 
-  database = [
-    {"rollno:" : 121, "name": "Sumit Kumar", "city": "Bangalore"},
-    {"rollno:" : 122, "name": "Rahul Sharma", "city": "Mumbai"},
-    {"rollno:" : 123, "name": "Priya Patel", "city": "Delhi"}
-  ]
+  # database = [
+  #   {"rollno:" : 121, "name": "Sumit Kumar", "marks": 85, "Dept": "CSE"},
+  #   {"rollno:" : 122, "name": "Rahul Sharma", "marks": 90, "Dept": "ECE"},
+  #   {"rollno:" : 123, "name": "Priya Patel", "marks": 95, "Dept": "AI/ML"}
+  # ]
 
-  return render(request, 'index.html', {'database': database})
+  # name = "web development course"
+  # desc = "This is a Django project created by Sumit Kumar"
+  # return render(request, 'index.html', {'name': name, 'desc': desc})  
+
+  # return render(request, 'index.html', {'database': database})
 
   # return render(request, 'index.html', {'username': 'Sumit Kumar','city': city, 'courses': courses })
+
+  employees = [
+    {"name": "Sumit Kumar", "age": 30, "department": "IT", salary: 60000},
+    {"name": "Rahul Sharma", "age": 25, "department": "HR", salary: 50000},
+    {"name": "Priya Patel", "age": 28, "department": "Finance", salary: 55000}
+  ]
+
+  return render(request, 'index.html', {'employees': employees})
 
 
 def about(request):
