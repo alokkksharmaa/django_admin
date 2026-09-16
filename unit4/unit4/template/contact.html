@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <title>Contact Us</title>
+</head>
+
+<body>
+  <h1> Contact Us</h1>
+  <form method="POST">
+    {% csrf_token %}
+    <label>Name:</label>
+    <input type="text" class="form-control">
+    <label>Email:</label>
+    <input type=" email" class="form-control">
+    <label>Subject</label>
+    <input type="text" class="form-control">
+    <button type="submit" class="button-border"> Send message</button>
+  </form>
+  {% if name and email and subject %}
+    <p>Thankyou, {{name}}! your message has been recieved</p>
+    <p>Email: {{email}}</p>
+    <p>Subject: {{subject}}</p>
+  {% endif %}
+  <script src="" async defer> </script>
+</body>
+</html>
