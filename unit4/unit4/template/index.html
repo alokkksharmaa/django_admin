@@ -6,9 +6,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Index File</title>
 </head>
+
 <body>
 
-  <h1> This is title page</h1>
-
+  <h1> This is form Template</h1>
+  <form method="POST">
+    {% csrf_token %}
+    {{form.as_table}}
+    <!-- as_p == paragraph  
+     similarly == as_table == to represent data s table-->
+    <input type="Submit" name="BUTTON">
+  </form>
+  {% if msg %}
+  Name: {{name}}
+  Phone: {{phone}}
+  City: {{city}}
+  Course: {{course}}
+  {{ msg }}
+  {% endif %}
+  <script src="" async defer>
+  </script>
 </body>
+
 </html>

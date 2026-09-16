@@ -30,10 +30,21 @@ def login(request):
 def index(request):
   return render(request, "index.html")
 
-
-
 # import form
 from . forms import userForm
+
 def index(request):
-  form=userForm()
+  if request.method == "POST":
+    name=request.POST.get("name")
+    phone=request.POST.get("phone")
+    city=request.POST.get("city")
+    course=request.POST.get("course")
+    message = "Form Submitted"
+    return render(request,"index.html", {"name":name,
+                                        "phone":phone,  
+                                        "city":city,
+                                         "course":course,
+                                          "message":message})
+  else:
+    form=userForm()
   return render(request, "index.html", {"form":form})
