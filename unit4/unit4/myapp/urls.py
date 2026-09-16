@@ -9,5 +9,9 @@ urlpatterns = [
 
 
 urlpatterns = [
-    path("index/",views.index, name="index");
+    path("index/",views.index, name="index")
+]
+
+urlpatterns= [
+    path("userForm/", views.index, name="userform")
 ]

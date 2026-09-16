@@ -2,6 +2,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 # Create your views here.
 
+
 def index(request):
   return render(request, "index.html")
 
@@ -28,3 +29,11 @@ def login(request):
 
 def index(request):
   return render(request, "index.html")
+
+
+
+# import form
+from . forms import userForm
+def index(request):
+  form=userForm()
+  return render(request, "index.html", {"form":form})
