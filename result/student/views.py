@@ -1,25 +1,15 @@
 import re
 
 from django.http import HttpResponse
-STUDENT_ID_PATTERN = re.compile(r"^CSE\d{4}[A-Z]\d{3}$")
 
 def result(request, student_id, marks):
     if int(marks) >= 75:
-        division = "Distinction"
+        return HttpResponse("Distinction")
     else:
         if int(marks) >= 60:
-            division = "First Division"
+            return HttpResponse("First Division")
         else:
             if int(marks) >= 40:
-                division = "Second Division"
+                return HttpResponse("Second Division")
             else:
-                division = "Fail"
-
-
-
-
-
-    return HttpResponse(
-        f"Student ID: {student_id}, Marks: {marks}, Result: {division}",
-        status=200,
-    )
+                return HttpResponse("Fail")

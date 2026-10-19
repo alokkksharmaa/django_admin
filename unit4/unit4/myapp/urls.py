@@ -11,3 +11,9 @@ urlpatterns = [
 urlpatterns = [
     path("index/",views.index, name="index")
 ]
+
+
+urlpatterns = [
+    path("form/", views.form, name="form"),
+    path("result/", views.result, name="result")
+]
