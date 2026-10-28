@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Departments</title>
+</head>
+
+<body>
+  <main>
+    <h1>Departments</h1>
+    <p><a href="{% url 'home' %}">Home</a></p>
+    {% for department in departments %}
+    <section>
+      <h2>{{ department.name }}</h2>
+      {% if department.teachers.all %}
+      <ul>
+        {% for teacher in department.teachers.all %}
+        <li>{{ teacher.name }}</li>
+        {% empty %}
+        <li>No teachers listed yet.</li>
+        {% endfor %}
+      </ul>
+      {% else %}
+      <p>No teachers listed yet.</p>
+      {% endif %}
+    </section>
+    {% empty %}
+    <p>No departments have been added yet.</p>
+    {% endfor %}
+  </main>
+</body>
+
+</html>
