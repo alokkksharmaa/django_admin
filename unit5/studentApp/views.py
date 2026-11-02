@@ -25,5 +25,22 @@ def depart(request):
     return render(request, "depart.html", {"departments": departments})
 
 
+
 def contact(request):
     return render(request, "contact.html")
+
+
+def delete(request):
+    response = HttpResponse("Cookie deleted successfully")
+    response.delete_cookie("username")
+    return response
+
+
+def visit_again(request):
+    value = int(request.COOKIES.get("visit"))
+    value+=1
+    response=HttpResponse()
+    response.set_cookie("Visit", value, max_age=3600)
+    return HttpResponse(f"total visits: " {value})
+    return response
+

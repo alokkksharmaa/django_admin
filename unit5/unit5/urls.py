@@ -9,4 +9,7 @@ urlpatterns = [
     path("std/", views.reg, name="student-registration"),
     path("success/", views.success, name="success"),
     path("depart/", views.depart, name="departments"),
+    path("/delete", views.delete)
+    path("", views.visit_again)
+
 ]
